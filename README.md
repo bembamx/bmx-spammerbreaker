@@ -12,10 +12,10 @@ sudo chmod 555 spammerbreaker.sh && sudo chown root:root spammerbreaker.sh && su
 You can add the following aliases to your .bash_aliases, .profile or .bash_profile file, modify the script location:
 
 ```
-alias sb="/usr/local/bin/spammerbreaker.sh"
-alias sbrm="/usr/local/bin/spammerbreaker.sh rm"
-alias sbadd="/usr/local/bin/spammerbreaker.sh add"
-alias sbres="/usr/local/bin/spammerbreaker.sh restart"
+alias sb="sudo /usr/local/bin/spammerbreaker.sh"
+alias sbrm="sudo /usr/local/bin/spammerbreaker.sh rm"
+alias sbadd="sudo /usr/local/bin/spammerbreaker.sh add"
+alias sbres="sudo /usr/local/bin/spammerbreaker.sh restart"
 ```
 
 Feel free to make changes as you need.
