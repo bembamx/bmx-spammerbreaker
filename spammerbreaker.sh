@@ -46,7 +46,7 @@ if [ -e "$SL" ] ; then
 					;;
 					
 				"restart" )
-					sh /scripts/restartsrv_exim					
+					/scripts/restartsrv_exim					
 					;;
 				
 				*)
