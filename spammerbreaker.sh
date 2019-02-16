@@ -31,6 +31,10 @@ if [ -e "$SL" ] ; then
 			
 				"add" )
 					if [[ $2 =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+						if grep -Fxq "$2" $SL ; then
+							echo "IP already exists"
+							exit
+						fi
 						echo "$2" >> $SL
 						if grep -Fxq "$2" $SL ; then
 							echo "IP successfully added"
