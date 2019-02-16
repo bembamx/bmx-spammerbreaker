@@ -15,6 +15,7 @@ You can add the following aliases to your .bash_aliases, .profile or .bash_profi
 alias sb="sudo /usr/local/bin/spammerbreaker.sh"
 alias sbrm="sudo /usr/local/bin/spammerbreaker.sh rm"
 alias sbadd="sudo /usr/local/bin/spammerbreaker.sh add"
+alias sbls="sudo /usr/local/bin/spammerbreaker.sh list"
 alias sbres="sudo /usr/local/bin/spammerbreaker.sh restart"
 ```
 
@@ -35,6 +36,13 @@ sb rm 123.123.123.123
 ```
 This will remove all the copies of the IP in your exim's spammeripblocks list. 
 
+
+```
+sb list
+```
+This will list all the IPs on the spammeripblocks list.
+
+
 ```
 sb restart
 ```
@@ -47,5 +55,6 @@ You can also use these shortcuts:
 ```
 sbadd 123.123.123.123 #to add IP
 sbrm 123.123.123.123 #to remove IP
-sbres 123.123.123.123 #to restart Exim
+sbres #to restart Exim
+sbls #to list all IPs
 ```
