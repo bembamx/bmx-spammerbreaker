@@ -44,6 +44,10 @@ if [ -e "$SL" ] ; then
 				"list" )
 					cat $SL					
 					;;
+					
+				"restart" )
+					sh /scripts/restartsrv_exim					
+					;;
 				
 				*)
 					echo "Coud not understand your arguments"
@@ -51,11 +55,6 @@ if [ -e "$SL" ] ; then
 			esac
 	
 	else 
-	
-		if [[ $1 == "restart" ]] ; then
-			sh /scripts/restartsrv_exim
-		else 	
-			echo "No arguments passed, please pass [command] [IP]"
-		fi
+		echo "No arguments passed, please pass [command] [IP]"
 	fi
 fi
