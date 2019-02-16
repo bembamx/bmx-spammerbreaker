@@ -26,17 +26,17 @@ Feel free to make changes as you need.
 After installing and adding the aliases, you can run it like this:
 
 ```
-sb add 123.123.123.123
+sudo sb add 123.123.123.123
 ```
 This will add the IP to your exim's spammeripblocks list. 
 
 ```
-sb rm 123.123.123.123
+sudo sb rm 123.123.123.123
 ```
 This will remove all the copies of the IP in your exim's spammeripblocks list. 
 
 ```
-sb restart
+sudo sb restart
 ```
 This will restart exim using the cPanel binary file.
 
@@ -45,7 +45,7 @@ This will restart exim using the cPanel binary file.
 You can also use these shortcuts:
 
 ```
-sbadd 123.123.123.123 #to add IP
-sbrm 123.123.123.123 #to remove IP
-sbres 123.123.123.123 #to restart Exim
+sudo sbadd 123.123.123.123 #to add IP
+sudo sbrm 123.123.123.123 #to remove IP
+sudo sbres 123.123.123.123 #to restart Exim
 ```
