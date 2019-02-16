@@ -12,10 +12,10 @@ sudo chmod 555 spammerbreaker.sh && sudo chown root:root spammerbreaker.sh && su
 You can add the following aliases to your .bash_aliases, .profile or .bash_profile file, modify the script location:
 
 ```
-alias sb="/usr/local/bin/spammerbreaker.sh"
-alias sbrm="/usr/local/bin/spammerbreaker.sh rm"
-alias sbadd="/usr/local/bin/spammerbreaker.sh add"
-alias sbres="/usr/local/bin/spammerbreaker.sh restart"
+alias sb="sudo /usr/local/bin/spammerbreaker.sh"
+alias sbrm="sudo /usr/local/bin/spammerbreaker.sh rm"
+alias sbadd="sudo /usr/local/bin/spammerbreaker.sh add"
+alias sbres="sudo /usr/local/bin/spammerbreaker.sh restart"
 ```
 
 Feel free to make changes as you need.
@@ -26,17 +26,17 @@ Feel free to make changes as you need.
 After installing and adding the aliases, you can run it like this:
 
 ```
-sudo sb add 123.123.123.123
+sb add 123.123.123.123
 ```
 This will add the IP to your exim's spammeripblocks list. 
 
 ```
-sudo sb rm 123.123.123.123
+sb rm 123.123.123.123
 ```
 This will remove all the copies of the IP in your exim's spammeripblocks list. 
 
 ```
-sudo sb restart
+sb restart
 ```
 This will restart exim using the cPanel binary file.
 
@@ -45,7 +45,7 @@ This will restart exim using the cPanel binary file.
 You can also use these shortcuts:
 
 ```
-sudo sbadd 123.123.123.123 #to add IP
-sudo sbrm 123.123.123.123 #to remove IP
-sudo sbres 123.123.123.123 #to restart Exim
+sbadd 123.123.123.123 #to add IP
+sbrm 123.123.123.123 #to remove IP
+sbres 123.123.123.123 #to restart Exim
 ```
