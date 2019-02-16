@@ -21,7 +21,7 @@ alias sbres="/usr/local/bin/spammerbreaker.sh restart"
 Feel free to make changes as you need.
 
 
-#Usage
+##Usage
 
 After installing and adding the aliases, you can run it like this:
 
